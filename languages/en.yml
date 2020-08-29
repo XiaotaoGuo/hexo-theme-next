@@ -16,12 +16,14 @@ menu:
   schedule: Schedule
   sitemap: Sitemap
   commonweal: Commonweal 404
+  links: Friends
 
 sidebar:
   overview: Overview
   toc: Table of Contents
 
 post:
+  comments.valine: Comment Counts
   posted: Posted on
   edited: Edited on
   created: Created

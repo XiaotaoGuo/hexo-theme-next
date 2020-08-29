@@ -24,14 +24,14 @@ minify: false
 custom_file_path:
   #head: source/_data/head.swig
   #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
+  sidebar: source/_data/sidebar.swig
+  postMeta: source/_data/post-meta.swig
+  # postBodyEnd: source/_data/post-body-end.swig
   #footer: source/_data/footer.swig
-  #bodyEnd: source/_data/body-end.swig
+  bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -97,10 +97,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -118,9 +118,10 @@ darkmode: false
 menu:
   home: / || fa fa-home
   #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
+  links: /links/ || fa fa-user-friends
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -163,11 +164,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.jpg 
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -177,8 +178,9 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/XiaotaoGuo || fab fa-github
+  E-Mail: mailto:guoxiaotao0819@gmail.com || fa fa-envelope
+  LinkedIn: https://www.linkedin.com/in/xiaotaoguo/ || linkedin 
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -201,7 +203,7 @@ links_settings:
   layout: block
 
 links:
-  #Title: http://yoursite.com
+  # 峡州仙士之页: https://cjh0613.com/index.html
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -255,7 +257,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true 
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
@@ -478,7 +480,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true 
 
 
 # ---------------------------------------------------------------
@@ -500,7 +502,7 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true 
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -516,7 +518,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
@@ -908,12 +910,12 @@ vendors:
   pjax:
 
   # FancyBox
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+  fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  jquery:
-  fancybox:
-  fancybox_css:
 
   # Medium-zoom
   # mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
@@ -995,3 +997,51 @@ vendors:
 css: css
 js: js
 images: images
+
+mylinks:
+  # 友链交换  已经添加贵站
+  # 名称：AnFrank
+  # 地址：https://enfangzhong.github.io/
+  # 描述：既可以早九晚五又可以浪迹天涯。
+  # 头像：https://enfangzhong.github.io/images/avatar.jpg
+  
+  
+  - nickname: 峡州仙士之页  #友链名称
+    site: https://cjh0613.com/index.html  #友链地址
+    info: 世上本没有路  #友链说明
+    avatar: https://cdn.jsdelivr.net/gh/cjh0613/blog/images/icons/CJHicon.jpg  #友链头像
+
+  - nickname: AnFrank  #友链名称
+    site: https://enfangzhong.github.io/  #友链地址
+    info: Stay Hungry Stay Foolish  #友链说明
+    avatar: https://github.com/enfangzhong/enfangzhong.github.io/blob/master/images/avatar.jpg?raw=true  #友链头像
+
+  - nickname: 米米的博客  #友链名称
+    site: https://zhangshuqiao.org  #友链地址
+    info: 米米的博客！！  #友链说明
+    avatar: https://gravatar.loli.net/avatar/f56980e9dc026727282a04eea02b4f4d?s=512  #友链头像
+
+  - nickname: 小丁的个人博客  #友链名称
+    site: https://tding.top  #友链地址
+    info: 世间所有的相遇，都是久别重逢  #友链说明
+    avatar: https://tding.top/images/avatar.webp  #友链头像
+
+  - nickname: Bill Yang’s Blog  #友链名称
+    site: https://blog.bill.moe  #友链地址
+    info: 这辈子都不可能更新的  #友链说明
+    avatar: https://blog.bill.moe/images/avatar.gif  #友链头像
+  
+  - nickname: Perry的博客  #友链名称
+    site: https://perry96.com/  #友链地址
+    info: 爱好数学和算法的码农  #友链说明
+    avatar: https://perry96.com/images/avatar.jpeg  #友链头像
+  
+  - nickname: 字节回声  #友链名称
+    site: https://www.bytecho.net/  #友链地址
+    info: 字节回声  #友链说明
+    avatar: https://images.bytecho.net/images/2020/08/08/077d70a8bcdf592b503ac5f45a8ebfa2.png  #友链头像
+  
+  - nickname: Xu’s Blog  #友链名称
+    site: https://hasaik.com/  #友链地址
+    info: 博观而约取，厚积而薄发！  #友链说明
+    avatar: https://hasaik.com/images/avatar.jpg  #友链头像 

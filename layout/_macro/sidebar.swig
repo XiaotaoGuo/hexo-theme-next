@@ -14,6 +14,8 @@
         {%- set display_toc = toc.length > 1 and display_toc %}
       {%- endif %}
 
+      
+
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
           {{ __('sidebar.toc') }}
@@ -44,6 +46,8 @@
         </div>
       {%- endif %}
 
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=3IgjZ2nwFXDxOcZaq3bMwhX63fbnM0O-5aVh7uWblik&cl=ffffff&w=a"></script>
+      
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
