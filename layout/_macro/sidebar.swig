@@ -48,6 +48,7 @@
 
       <div style="width: 1px; max-height: 1px; opacity: 0">
       <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=3IgjZ2nwFXDxOcZaq3bMwhX63fbnM0O-5aVh7uWblik&cl=ffffff&w=a"></script>
+      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=7J-ci2sp0cBzei24cCJp2iO8l7jpOD-im8u_ZA7SQpo"></script>
       </div>
 
       <script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5nfyqztujhr&amp;s=220&amp;m=1&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
